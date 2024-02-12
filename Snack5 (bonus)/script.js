@@ -4,6 +4,16 @@ e restituisca la stessa stringa
 ma con le iniziali delle parole tutte in maiuscolo
 
 */
+const buttonStart = document.getElementById("button-start");
+
+buttonStart.addEventListener("click",function(){
+    const inputText = document.getElementById("input-text").value;
+
+    document.getElementById("result").innerText = `${toUpper(inputText)}`;
+
+})
+
+
 
 
 //funzione per parole in maiscolo
@@ -27,4 +37,3 @@ function toUpper(str){
 
 }
 
-console.log(toUpper("nel mezzo del cammin"))
