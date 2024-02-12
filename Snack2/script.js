@@ -13,13 +13,25 @@ const array2 = ["a","b","c","d","e"];
 const array3 = [];
 
 
-for(i=0;i<array1.length;i++){
-    array3.push(array1[i])
-    array3.push(array2[i])
 
+
+console.log(alternate(array1,array2))
+
+
+
+
+
+function alternate(firstArray,secondArray){
+    let arrayAlt = [];
+    for(i=0;i<firstArray.length;i++){
+        arrayAlt.push(firstArray[i]);
+        arrayAlt.push(secondArray[i]);  
+    }
+
+    return arrayAlt;
 }
 
-console.log(array3)
+
 
 
 
