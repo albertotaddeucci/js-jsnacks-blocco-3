@@ -6,17 +6,23 @@ prendendo alternativamente gli elementi da uno e dall’altro
 
 */
 
-const array1 = [1,2,3,4,5];
 
-const array2 = ["a","b","c","d","e"];
+
+const array1 = [];
+
+const array2 = [];
 
 const array3 = [];
 
+for (i=0;i<5;i++){
+    array1.push(prompt("inserisci un numero"));
+}
 
+for (i=0;i<5;i++){
+    array2.push(prompt("inserisci una lettera"));
+}
 
-
-console.log(alternate(array1,array2))
-
+document.getElementById("result").innerText = alternate(array1,array2);
 
 
 
