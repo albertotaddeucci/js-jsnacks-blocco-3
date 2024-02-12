@@ -12,8 +12,6 @@ const array1 = [];
 
 const array2 = [];
 
-const array3 = [];
-
 for (i=0;i<5;i++){
     array1.push(prompt("inserisci un numero"));
 }
@@ -26,7 +24,7 @@ document.getElementById("result").innerText = alternate(array1,array2);
 
 
 
-
+//funzione che restituisce array con elementi alternati
 function alternate(firstArray,secondArray){
     let arrayAlt = [];
     for(i=0;i<firstArray.length;i++){

@@ -27,14 +27,21 @@ buttonStart.addEventListener("click",function(){
     
     const result = sliceArray(arrayNum,indexMin,indexMax);
 
-    document.getElementById("result").innerText = `${result}`
-
+    document.getElementById("result").innerText = `${result}`;
 
 })
 
 
+//funzione per prendere parte array tra min e max compresi
 function sliceArray(array,min,max){
+    let error;
+    if (min > max || max>array.length || min === ""|| max===""){
+        return error = `Errore`;
+
+    } else {
+        return array.slice(min-1,max);
+
+    }
     
-    return array.slice(min-1,max);
 }
 
