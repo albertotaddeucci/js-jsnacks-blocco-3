@@ -14,8 +14,25 @@
 </head>
 <body>
   
-  
-  <div id="result"></div>
+  <div class="row g-3 align-items-center">
+    <div id="array"></div>
+    <div>Scegli gli indici tra cui prendere i vari elementi (gli indici saranno compresi)</div>
+    
+    <div class="col-auto">
+      <label for="input-min" class="col-form-label">Indice Min</label>
+      <input type="number" id="input-min" class="form-control">
+      <label for="input-max" class="col-form-label">Indice Max</label>
+      <input type="number" id="input-max" class="form-control">
+
+    </div>
+    <div class="col-auto">
+        <div id="result"></div>
+      <!-- <span id="passwordHelpInline" class="form-text">
+        Must be 8-20 characters long.
+      </span> -->
+    </div>
+  </div>
+  <button id="button-start">Invia</button>
     
 
 

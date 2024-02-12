@@ -14,20 +14,27 @@ Nel nostro caso, se la chiamassimo così tagliaArray(arrayNumeri, 2, 4)
  ci restituirebbe un array così composto:[2, 3, 4]
 */
 
+const arrayNum = [1,2,3,4,5,6,7] ;
 
-const arrayNum = [0,1,2,3,4,5,6,7,8,9] ;
-
-console.log(arrayNum)
-
-console.log(sliceArray(arrayNum,2,4))
+document.getElementById("array").innerHTML = `La lista degli elementi è: <br>${arrayNum}`;
 
 
+const buttonStart = document.getElementById("button-start");
+
+buttonStart.addEventListener("click",function(){
+    const indexMin = document.getElementById("input-min").value;
+    const indexMax = document.getElementById("input-max").value;
+    
+    const result = sliceArray(arrayNum,indexMin,indexMax);
+
+    document.getElementById("result").innerText = `${result}`
+
+
+})
 
 
 function sliceArray(array,min,max){
     
-    return array.slice(min,max+1);
+    return array.slice(min-1,max);
 }
-
-
 
