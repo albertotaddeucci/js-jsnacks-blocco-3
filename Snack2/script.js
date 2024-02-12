@@ -12,15 +12,18 @@ const array1 = [];
 
 const array2 = [];
 
-for (i=0;i<5;i++){
-    array1.push(prompt("inserisci un numero"));
+for (i=0;i<3;i++){
+    array1.push(prompt("inserisci 3 elementi per primo array"));
 }
 
-for (i=0;i<5;i++){
-    array2.push(prompt("inserisci una lettera"));
+for (i=0;i<3;i++){
+    array2.push(prompt("inserisci 3 elementi per secondo array"));
 }
 
 document.getElementById("result").innerText = alternate(array1,array2);
+
+document.getElementById("array1").innerText = array1;
+document.getElementById("array2").innerText = array2;
 
 
 
