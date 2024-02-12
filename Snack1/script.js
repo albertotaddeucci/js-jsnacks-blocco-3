@@ -11,6 +11,7 @@ buttonStart.addEventListener("click", function(){
     const inputElement = document.getElementById("input-text").value;
 
     document.getElementById("result").innerText = invert(inputElement)
+    document.getElementById("result").style = "display: block"
 });
 
 
