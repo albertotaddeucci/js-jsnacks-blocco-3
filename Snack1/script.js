@@ -10,8 +10,6 @@ const buttonStart = document.getElementById("button-start");
 buttonStart.addEventListener("click", function(){
     const inputElement = document.getElementById("input-text").value;
 
-    invert("inputElement")
-
     document.getElementById("result").innerText = invert(inputElement)
 });
 
