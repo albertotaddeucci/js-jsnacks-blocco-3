@@ -10,6 +10,8 @@ buttonStart.addEventListener("click",function(){
     const inputText = document.getElementById("input-text").value;
 
     document.getElementById("result").innerText = `${toUpper(inputText)}`;
+    document.getElementById("result").style = "display: block"
+
 
 })
 
