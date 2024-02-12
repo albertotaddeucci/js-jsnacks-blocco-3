@@ -16,7 +16,7 @@ Nel nostro caso, se la chiamassimo così tagliaArray(arrayNumeri, 2, 4)
 
 const arrayNum = [1,2,3,4,5,6,7] ;
 
-document.getElementById("array").innerHTML = `La lista degli elementi è: <br>${arrayNum}`;
+document.getElementById("array").innerHTML = `<b>La lista degli elementi è:</b>  ${arrayNum}`;
 
 
 const buttonStart = document.getElementById("button-start");
@@ -28,6 +28,8 @@ buttonStart.addEventListener("click",function(){
     const result = sliceArray(arrayNum,indexMin,indexMax);
 
     document.getElementById("result").innerText = `${result}`;
+    document.getElementById("result").style = "display: block";
+
 
 })
 
