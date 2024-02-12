@@ -19,6 +19,7 @@ buttonStart.addEventListener("click",function(){
        resultElement.innerText += array[i]
     
     }
+    resultElement.style = "display: block"
 
 })
 
